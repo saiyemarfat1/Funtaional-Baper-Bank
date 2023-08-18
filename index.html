@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtaional Baper bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center mt-3 text-5xl font-bold">Funtaional <span class="text-red-500"> Baper-Bank</span>!!!</h1>
+
+    <section class="mt-8">
+        <div class="w-3/4 mx-auto gap-3 grid grid-cols-3 ">
+            <div class=" bg-amber-400 p-8 rounded-lg">
+                <h1 class="text-3xl text-white ">Diposit</h1>
+                <h1 class="text-5xl text-white font-medium mt-1"">$<span id="diposit-amount">00</span> </h1>
+            </div>
+            <div class=" bg-red-400 p-8 rounded-lg">
+                <h1 class="text-3xl text-white">Withdraw</h1>
+                <h1 class="text-5xl text-white font-medium mt-1"">$<span id="withdraw-amount">00</span> </h1>
+            </div>
+            <div class=" bg-sky-500 p-8 rounded-lg">
+                <h1 class="text-3xl text-white">Blance</h1>
+                <h1 class="text-5xl text-white font-medium mt-1"">$<span id="blance-total">1240</span> </h1>
+            </div> 
+        </div>
+    </section>
+
+    <section class="mt-8 w-3/4 mx-auto">
+        <div class=" grid grid-cols-2 gap-4">
+            <div class=" bg-violet-400 p-8 rounded-lg">
+            <h1 class="text-3xl text-white ">Your Diposit</h1>
+            <input id="diposit-field" class="p-2 w-3/4 mt-2 rounded-lg block" type="text" placeholder="$ Amount You want to Diposit">
+            <button class="bg-blue-900 hover:bg-blue-600 px-6 py-2 mt-3 rounded-lg text-white" id="btn-diposit">Diposit</button>
+        </div>
+            <div class=" bg-amber-400 p-8 rounded-lg">
+            <h1 class="text-3xl text-white ">Your Diposit</h1>
+            <input id="withdraw-field" class="p-2 w-3/4 mt-2 rounded-lg block" type="text" placeholder="$ Amount You want to Diposit">
+            <button class="bg-blue-900 hover:bg-blue-600 px-6 py-2 mt-3 rounded-lg text-white" id="btn-withdraw">Withdraw</button>
+        </div>
+        </div>
+    </section>
+
+<script src="deposit.js"></script>
+<script src="withdraw.js"></script>
+</body>
+
+</html>
